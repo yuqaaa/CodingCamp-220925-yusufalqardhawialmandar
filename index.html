@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Website Latihan</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="images/download.png" alt="Logo" />
+  </div>
+  <nav>
+    <button class="nav-btn active" data-target="home">HOME</button>
+    <button class="nav-btn" data-target="profile">OUR PROFILE</button>
+    <button class="nav-btn" data-target="portfolio">PORTFOLIO</button>
+    <button class="nav-btn" data-target="message-us">MESSAGE US</button>
+  </nav>
+</header>
+
+<main>
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Hi Yusuf Al-Qardhawi, Welcome To Website RevoU</h2>
+    <p style="text-align: justify;">
+    RevoU, atau PT. Revolusi Cita Edukasi, adalah perusahaan edukasi teknologi (edutech) yang didirikan pada awal Juni 2019 oleh Matteo Sutto, 
+    mantan petinggi di Zalora dan iPrice Group, sebagai gabungan dari startup edutech Tiongkok dan AS yang dilokalkan untuk Indonesia. 
+    Tujuannya adalah melatih kompetensi digital untuk mempersiapkan individu menghadapi dunia kerja di era digital, 
+    dengan bootcamp intensif yang fokus pada keterampilan di bidang digital seperti Digital Marketing dan Product Management.</p>
+    <div style="text-align:center; margin-top: 50px;">
+    <img src="images/download 1.png" alt="Placeholder Image" style="width:900px;" />
+    </div>
+  </section>
+
+  <!-- Our Profile -->
+  <section id="profile">
+    <h3>Our Headquarter</h3>
+    <div class="places">
+      <div class="place-wrapper">
+        <div class="place-circle">
+          <img src="images/Download 2.jpg" alt="Office">
+        </div>
+        <div class="place-label">Jakarta</div>
+      </div>
+      <div class="place-wrapper">
+        <div class="place-circle">
+          <img src="images/download 3.webp" alt="Office">
+        </div>
+        <div class="place-label">Bandung</div>
+      </div>
+      <div class="place-wrapper">
+        <div class="place-circle">
+          <img src="images/download 4.jpg" alt="Office">
+        </div>
+        <div class="place-label">Surabaya</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portofolio -->
+  <section id="portfolio">
+    <h3>Portfolio</h3>
+    <p style="text-align: justify;">RevoU adalah hasil perpaduan startup edutech dari Tiongkok dan Amerika Serikat, yang dilokalkan untuk Indonesia, dengan misi membekali para siswanya dengan keterampilan digital yang dibutuhkan industri teknologi saat ini. 
+      Sejak awal berdirinya, 
+      RevoU telah menyediakan pelatihan keterampilan digital seperti 
+      Digital Marketing, Data Analytics, dan Product Management, 
+      hingga sukses meluluskan ribuan alumni yang berkarier di industri teknologi dan mengembangkan bisnis mereka. </p>
+      <p style="text-align: justify;">Misi dari RevoU adalah mengatasi kesenjangan antara pendidikan dan kebutuhan industri dengan menyediakan alat untuk mengembangkan skill yang relevan, 
+        terutama di bidang teknologi. Di awal pendiriannya, RevoU fokus pada program Full-Stack Digital Marketing, yang mencakup berbagai aspek mulai dari SEM, SEO, CRM, hingga Content Marketing. Dengan permintaan yang tinggi, RevoU kemudian memperluas penawarannya dengan kelas lain seperti Full-stack Data Analytics dan Full-stack Product Management. </p>
+    <p style="text-align: justify;">Kantor RevoU berlokasi di WeWork, Noble House Level 29, Mega Kuningan No. 2, Jakarta 12950. RevoU adalah perusahaan edutech yang berfokus pada pelatihan profesi dan pengembangan karir di bidang industri teknologi digital, menawarkan bootcamp dan mini course untuk membekali siswa dengan keterampilan yang dibutuhkan di era digital. </p>
+  </section>
+
+  <!-- Message Us -->
+  <section id="message-us">
+    <h3>Message Us</h3>
+    <div id="message-container" style="display:flex; gap: 40px;"> 
+      <form id="msgForm">
+        <div class="form-group">
+          <label for="name">Nama</label> :
+          <input type="text" id="name" name="name" placeholder="Nama" required />
+        </div>
+        <div class="form-group">
+          <label for="birthdate">Tanggal Lahir</label> :
+          <input type="date" id="birthdate" name="birthdate" required value="2023-04-02" />
+        </div>
+        <div class="form-group" style="align-items:center;">
+          <label>Jenis Kelamin</label> :
+          <input type="radio" id="laki" name="gender" value="Laki-Laki" checked />
+          <label for="laki" style="margin: 0 12px 0 2px;">Laki-Laki</label>
+          <input type="radio" id="perempuan" name="gender" value="Perempuan" />
+          <label for="perempuan" style="margin-left:2px;">Perempuan</label>
+        </div>
+        <div class="form-group" style="align-items:flex-start;">
+          <label for="message">Pesan</label> :
+          <textarea id="message" name="message" placeholder="Pesan" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="data-output">
+        <b>Current time</b> : <span id="current-time"></span>
+        <br /><br />
+        <b>Nama</b> : <span id="out-name">-</span><br />
+        <b>Tanggal Lahir</b> : <span id="out-birthdate">-</span><br />
+        <b>Jenis Kelamin</b> : <span id="out-gender">-</span><br />
+        <b>Pesan</b> : <span id="out-message">-</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Created By RevoU
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

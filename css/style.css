@@ -1,0 +1,183 @@
+/* Reset dan styling dasar */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid black;
+  background-color: #15533A;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 70px;
+  width: 70px;
+  border-radius: 60%;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+}
+nav button {
+  border: 1px solid black;
+  background: #E3D151;
+  color: black;
+  padding: 8px 16px;
+  margin-left: 0;
+  cursor: pointer;
+  font-size: 14px;
+  border-left: none;
+  outline: none;
+  transition: background-color 0.3s;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+nav button:first-child {
+  border-left: 1px solid black;
+}
+nav button:hover,
+nav button.active {
+  background-color: #E3D151;
+}
+
+/* Bagian konten utama */
+main {
+  padding: 20px 120px 40px 120px;
+  min-height: 600px;
+  background-color: #E3D151;
+}
+
+section {
+  padding: 40px 0;
+  border-bottom: 1px solid black;
+}
+
+/* Home Section */
+#home h2 {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+/* Our Headquarter */
+#headquarter h3 {
+  font-weight: bold;
+}
+.places {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+.place-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid black;
+  overflow: hidden; /* agar gambar tidak keluar dari lingkaran */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+.place-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* agar gambar proporsional dan memenuhi lingkaran */
+}
+.place-label {
+  text-align: center;
+  font-size: 30px;
+}
+.place-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Message Us */
+#message-us {
+  /* display: flex; */
+  gap: 60px;
+  padding-top: 10px;
+}
+form {
+  flex: 1;
+  max-width: 400px;
+}
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+form .form-group {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+}
+form .form-group label {
+  width: 130px;
+  font-weight: normal;
+}
+form input[type="text"],
+form input[type="date"],
+form textarea {
+  flex: 1;
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #888;
+  border-radius: 3px;
+}
+form textarea {
+  resize: vertical;
+  height: 80px;
+}
+form input[type="radio"] {
+  margin-left: 10px;
+  margin-right: 4px;
+}
+form button {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  border: 1px solid #888;
+  background-color: #BDBDBD;
+  cursor: pointer;
+  border-radius: 4px;
+}
+form button:hover {
+  background-color: #388E3C;
+}
+
+/* Box untuk menampilkan data submit */
+#data-output {
+  flex: 1;
+  border: 1px solid black;
+  padding: 15px;
+  font-size: 14px;
+  white-space: pre-line;
+  background-color: #f9f9f9;
+}
+
+/* Footer */
+footer {
+  text-align: right;
+  padding: 10px 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  border-top: 1px solid black;
+  background-color: #15533A;
+}
